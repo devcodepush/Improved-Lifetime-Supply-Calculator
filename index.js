@@ -1,4 +1,6 @@
-const rickName = "Rick";
+//The information I have from line 18 to 37  has better structure in 3 objects in comparison with Line 3 to 16
+
+/* const rickName = "Rick";
 const rickCurrentAge = 40;
 const rickMaximumAge = 80;
 const rickQuantityPerWeek = 10;
@@ -12,6 +14,7 @@ const nickName = "Nick";
 const nickCurrentAge = 60;
 const nickMaximumAge = 80;
 const nickQuantityPerWeek = 30;
+ */
 
 const rick = {
   name: "Rick",
@@ -35,7 +38,6 @@ const nick = {
 };
 
 const names = ["Rick", "Alison", "Nick"];
-
 const people = [rick, alison, nick];
 
 // This is a function which is going to log a message(string) with the current age, total potatos, and maximum age
@@ -51,23 +53,11 @@ function calculatePotatoes(name, currentAge, maximumAge, quantityPerWeek) {
   return phrase;
 }
 
-calculatePotatoes(
-  rickName,
-  rickCurrentAge,
-  rickMaximumAge,
-  rickQuantityPerWeek
-);
+//Call the functions for 3 persons
 
-calculatePotatoes(
-  alisonName,
-  alisonCurrentAge,
-  alisonMaximumAge,
-  alisonQuantityPerWeek
-);
-
-calculatePotatoes(
-  nickName,
-  nickCurrentAge,
-  nickMaximumAge,
-  nickQuantityPerWeek
-);
+//Rick
+calculatePotatoes("Rick", 40, 80, 10);
+//Alison
+calculatePotatoes("Alison", 50, 80, 30);
+//Nick
+calculatePotatoes("Nick", 60, 80, 30);
