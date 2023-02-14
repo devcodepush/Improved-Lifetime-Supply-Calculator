@@ -56,8 +56,23 @@ function calculatePotatoes(name, currentAge, maximumAge, quantityPerWeek) {
 //Call the functions for 3 persons
 
 //Rick
-calculatePotatoes("Rick", 40, 80, 10);
+calculatePotatoes(
+  rick.name,
+  rick.currentAge,
+  rick.maximumAge,
+  rick.quantityPerWeek
+);
 //Alison
-calculatePotatoes("Alison", 50, 80, 30);
+calculatePotatoes(
+  alison.name,
+  alison.currentAge,
+  alison.maximumAge,
+  alison.quantityPerWeek
+);
 //Nick
-calculatePotatoes("Nick", 60, 80, 30);
+calculatePotatoes(
+  nick.name,
+  nick.currentAge,
+  nick.maximumAge,
+  nick.quantityPerWeek
+);
