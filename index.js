@@ -44,7 +44,10 @@ const people = [rick, alison, nick];
 // Arguments: We need the name, currentAge, maximumAge and quantityPerWeek
 //const name = name;
 
-function calculatePotatoes(name, currentAge, maximumAge, quantityPerWeek) {
+
+
+// THIS WAY IS GOOD BUT THE WHAT IS PUT NEXT IS MORE ELEGANT AND CLEAN!
+/* function calculatePotatoes(name, currentAge, maximumAge, quantityPerWeek) {
   const numberOfWeeks = ((maximumAge - currentAge) * 365) / 7;
   const totalPotatos = numberOfWeeks * quantityPerWeek;
   const phrase = `${name} has ${currentAge} years and will eat ${totalPotatos} potatos until age of ${maximumAge}`;
@@ -53,26 +56,30 @@ function calculatePotatoes(name, currentAge, maximumAge, quantityPerWeek) {
   return phrase;
 }
 
-//Call the functions for 3 persons
-
 //Rick
 calculatePotatoes(
   rick.name,
   rick.currentAge,
   rick.maximumAge,
   rick.quantityPerWeek
-);
+); */
+
+
+//More clean and elegant and compact 
+function calculatePotatoes(user) {
+  const numberOfWeeks = ((user.maximumAge - user.currentAge) * 365) / 7;
+  const totalPotatos = numberOfWeeks * user.quantityPerWeek;
+  const phrase = `${user.name} has ${user.currentAge} years and will eat ${totalPotatos} potatos until age of ${user.maximumAge}`;
+
+  console.log("Result:", phrase);
+  return phrase;
+}
+
+//Call the functions for 3 persons
+
+//Rick
+calculatePotatoes(rick);
 //Alison
-calculatePotatoes(
-  alison.name,
-  alison.currentAge,
-  alison.maximumAge,
-  alison.quantityPerWeek
-);
+calculatePotatoes(alison);
 //Nick
-calculatePotatoes(
-  nick.name,
-  nick.currentAge,
-  nick.maximumAge,
-  nick.quantityPerWeek
-);
+calculatePotatoes(nick);
