@@ -1,16 +1,14 @@
-#### GitHub page 🚀
+### GitHub Page 🚀
 Click [HERE](https://devcodepush.github.io/Improved-Lifetime-Supply-Calculator/) to see the page!
 
 #### Improved Lifetime Supply Calculator 🚀
 Create a better lifetime supply calculator from what we were doing yesterday (Monday 1st February) in class, and test it in 3 different user cases. You should use variables, objects and a function.
-
 
 #### Instructions 🚀
 First of all, you need to read the exercise if you haven’t yet:
 The Lifetime Supply Calculator
 
 ###### How many potatoes will a person eat until the end of his life? Discover yourself!
-
 
 1. Store the persons current age into a variable.
 2. Store an estimated maximum age into a variable.
